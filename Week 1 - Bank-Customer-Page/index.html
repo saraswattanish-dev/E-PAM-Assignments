@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Bank</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>National Bank</h1>
+
+        <p class="welcome">
+            Welcome to ABC Bank Customer Portal
+        </p>
+
+        <div class="card">
+
+            <h2>Customer Details</h2>
+
+            <p><strong>Name :</strong> Tanish Saraswat</p>
+
+            <p><strong>Customer ID :</strong> C1025</p>
+
+            <p><strong>Account Number :</strong> 1234567890</p>
+
+            <p><strong>Branch :</strong> Bhopal</p>
+
+            <p><strong>Account Type :</strong> Savings</p>
+
+        </div>
+
+        <div class="card balance-card">
+
+            <h2>Current Balance</h2>
+
+            <h1 class="balance">
+
+                ₹ <span id="balance">10000</span>
+
+            </h1>
+
+        </div>
+
+        <div class="card">
+
+            <h2>Transaction</h2>
+
+            <label>Enter Amount</label>
+
+            <input
+                type="number"
+                id="amount"
+                placeholder="Enter Amount"
+            >
+
+            <div class="button-box">
+
+                <button onclick="depositMoney()">
+                    Deposit
+                </button>
+
+                <button onclick="withdrawMoney()">
+                    Withdraw
+                </button>
+
+                <button onclick="clearInput()">
+                    Clear
+                </button>
+
+            </div>
+
+        </div>
+
+        <div class="card">
+
+            <p>
+                <strong>Total Transactions :</strong>
+
+                <span id="count">0</span>
+            </p>
+
+            <p>
+                <strong>Last Transaction :</strong>
+
+                <span id="lastTransaction">
+                    No Transaction Yet
+                </span>
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <h2>Transaction History</h2>
+
+            <ul id="history">
+
+            </ul>
+
+        </div>
+
+        <footer>
+
+            <p>ABC Bank Customer Portal</p>
+
+            <p>Developed by Divyansh Gupta</p>
+
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
